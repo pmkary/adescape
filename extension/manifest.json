@@ -1,18 +1,17 @@
 {
     "manifest_version": 2,
-    "name": "Kary's Ungamify",
+    "name": "Kary's AdEscape",
     "author": "Pouya Kary",
     "incognito": "spanning",
     "version": "0.1",
-    "description": "Remove gamifications and don't get addicted to stuff!",
+    "description": "Let all those YouTube ads be skipped automatically",
     "icons": {
         "48": "icon/icon.png"
     },
-
     "content_scripts": [
         {
-            "matches": ["*://github.com/*"],
-            "js": ["sites/github.com.js"]
+            "matches": ["*://www.youtube.com/*"],
+            "js": ["core.js"]
         }
     ]
   }
